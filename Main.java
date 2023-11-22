@@ -14,7 +14,7 @@ public class Main {
         int count = 10;
         while (count > 0) {
             System.out.println("Count: " + count);
-            count += 2;
+            count += -2;
         }
 
         // Problème 4
