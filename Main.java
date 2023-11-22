@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
         // Problème 1
         int[] numbers = {1, 2, 3, 4, 5};
-        for (int i = 0; i <= numbers.length; i++) {
+        for (int i = 0; i <= numbers.length - 1; i++) {
             System.out.println("Number at index " + i + ": " + numbers[i]);
         }
 
@@ -35,7 +35,10 @@ public class Main {
 
     // Méthode pour le problème de division par zéro
     public static int calculateValue(int a, int b) {
+    	if (b != 0) {
         return a / b;
+        }
+    	return 0;
     }
 
     // Méthode pour le problème d'utilisation incorrecte d'une méthode de classe
